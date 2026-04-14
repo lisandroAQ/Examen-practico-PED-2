@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lisan\\Desktop\\Guia 7\\WindowsFormsApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B879A689-B1E2-4FDC-8961-99BE6AD64BA1}|WindowsFormsApp1.csproj|c:\\users\\lisan\\desktop\\guia 7\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B879A689-B1E2-4FDC-8961-99BE6AD64BA1}|WindowsFormsApp1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B879A689-B1E2-4FDC-8961-99BE6AD64BA1}|WindowsFormsApp1.csproj|C:\\Users\\lisan\\Desktop\\Guia 7\\WindowsFormsApp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B879A689-B1E2-4FDC-8961-99BE6AD64BA1}|WindowsFormsApp1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B879A689-B1E2-4FDC-8961-99BE6AD64BA1}|WindowsFormsApp1.csproj|C:\\Users\\lisan\\Desktop\\Guia 7\\WindowsFormsApp1\\arbol_binario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B879A689-B1E2-4FDC-8961-99BE6AD64BA1}|WindowsFormsApp1.csproj|solutionrelative:arbol_binario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B879A689-B1E2-4FDC-8961-99BE6AD64BA1}|WindowsFormsApp1.csproj|C:\\Users\\lisan\\Desktop\\Guia 7\\WindowsFormsApp1\\nodo_arbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B879A689-B1E2-4FDC-8961-99BE6AD64BA1}|WindowsFormsApp1.csproj|solutionrelative:nodo_arbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\lisan\\Desktop\\Guia 7\\WindowsFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\lisan\\Desktop\\Guia 7\\WindowsFormsApp1\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAA/wGYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T01:52:07.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Arbol_Binario.cs",
+              "DocumentMoniker": "C:\\Users\\lisan\\Desktop\\Guia 7\\WindowsFormsApp1\\Arbol_Binario.cs",
+              "RelativeDocumentMoniker": "Arbol_Binario.cs",
+              "ToolTip": "C:\\Users\\lisan\\Desktop\\Guia 7\\WindowsFormsApp1\\Arbol_Binario.cs",
+              "RelativeToolTip": "Arbol_Binario.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAAwI4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T00:37:31.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Nodo_Arbol.cs",
+              "DocumentMoniker": "C:\\Users\\lisan\\Desktop\\Guia 7\\WindowsFormsApp1\\Nodo_Arbol.cs",
+              "RelativeDocumentMoniker": "Nodo_Arbol.cs",
+              "ToolTip": "C:\\Users\\lisan\\Desktop\\Guia 7\\WindowsFormsApp1\\Nodo_Arbol.cs",
+              "RelativeToolTip": "Nodo_Arbol.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T22:09:00.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\lisan\\Desktop\\Guia 7\\WindowsFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\lisan\\Desktop\\Guia 7\\WindowsFormsApp1\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T22:08:00.215Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
