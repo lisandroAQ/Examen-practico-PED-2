@@ -2,4 +2,35 @@
 # Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
 ################################################################################
 
-/WindowsFormsApp1/.vs
+# Carpetas de compilación
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Archivos de cache
+*.cache
+*.dbmdl
+
+# Archivos de paquetes (si usas NuGet)
+packages/
+
+# Archivos de configuración local
+appsettings.Development.json
+
+# Rider / VS Code (por si acaso)
+.idea/
+.vscode/
+
+# Otros
+*.exe
+*.dll
