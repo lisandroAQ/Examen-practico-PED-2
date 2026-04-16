@@ -8,3 +8,14 @@ C:\Users\lisan\Desktop\Guia 7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj
 C:\Users\lisan\Desktop\Guia 7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\lisan\Desktop\Guia 7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\lisan\Desktop\Guia 7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\2022\source\repos\Examen-practico-PED-2\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\2022\source\repos\Examen-practico-PED-2\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\2022\source\repos\Examen-practico-PED-2\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\2022\source\repos\Examen-practico-PED-2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\2022\source\repos\Examen-practico-PED-2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+C:\Users\2022\source\repos\Examen-practico-PED-2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\2022\source\repos\Examen-practico-PED-2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\2022\source\repos\Examen-practico-PED-2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\2022\source\repos\Examen-practico-PED-2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\2022\source\repos\Examen-practico-PED-2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\2022\source\repos\Examen-practico-PED-2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

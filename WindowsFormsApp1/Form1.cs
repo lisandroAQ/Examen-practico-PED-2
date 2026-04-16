@@ -3,7 +3,6 @@ using System.Drawing;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +13,6 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        int Dato = 0;
         int cont = 0;
         Arbol_Binario mi_Arbol;
 
@@ -44,65 +42,103 @@ namespace WindowsFormsApp1
             mi_Arbol.DibujarArbol(g, panel1.Size, formatonodo);
         }
 
+        // ── Actualizar estadísticas automáticamente ───────────────────────
+        private void ActualizarEstadisticas()
+        {
+            lblNodos.Text = "Total nodos: " + mi_Arbol.TotalNodos();
+            lblAltura.Text = "Altura: " + mi_Arbol.AlturaArbol();
+            lblPromedio.Text = "Promedio nivel: " + mi_Arbol.PromedioNivel();
+        }
+
         private void btnInsertar_Click(object sender, EventArgs e)
         {
             if (txtDato.Text == "")
-                MessageBox.Show("Debe ingresar un valor");
-            else 
             {
-                Dato = int.Parse(txtDato.Text);
-                if (Dato <= 0 || Dato >= 1000)
-                    MessageBox.Show("Solo Recibe Valores desde 1 hasta 999", "error de ingreso");
-                else 
-                {
-                    mi_Arbol.Insertar(Dato);
-                    txtDato.Clear();
-                    txtDato.Focus();
-                    cont++;
-
-                    panel1.Refresh();
-                }
+                MessageBox.Show("Debe ingresar un valor");
+                return;
             }
+
+            int dato = int.Parse(txtDato.Text);
+            if (dato <= 0 || dato >= 1000)
+            {
+                MessageBox.Show("Solo recibe valores del 1 al 999", "Error de ingreso");
+                return;
+            }
+
+            mi_Arbol.Insertar(dato);
+            txtDato.Clear();
+            txtDato.Focus();
+            cont++;
+            panel1.Refresh();
+            ActualizarEstadisticas();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if(txtEliminar.Text == "")
-                MessageBox.Show("Debe ingresar el valor a eliminar");
-            else 
+            if (txtEliminar.Text == "")
             {
-                mi_Arbol.Eliminar(Dato);
-                txtEliminar.Clear();
-                txtEliminar.Focus();
-                cont--;
-
-
-                panel1.Refresh();
+                MessageBox.Show("Debe ingresar el valor a eliminar");
+                return;
             }
+
+            int dato = int.Parse(txtEliminar.Text); // Bug corregido: ahora lee txtEliminar
+            if (dato <= 0 || dato >= 1000)
+            {
+                MessageBox.Show("Solo recibe valores del 1 al 999", "Error de ingreso");
+                return;
+            }
+
+            mi_Arbol.Eliminar(dato);
+            txtEliminar.Clear();
+            txtEliminar.Focus();
+            panel1.Refresh();
+            ActualizarEstadisticas();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             if (txtBuscar.Text == "")
-                MessageBox.Show("Debe ingresar el valor a buscar");
-            else 
             {
-                Dato = Convert.ToInt32(txtBuscar.Text);
-                if (Dato <= 0 || Dato >= 1000)
-                    MessageBox.Show("Solo Recibe Valores desde 1 hasta 999", "error de ingreso");
-                else 
-                {
-                    FormatoNodo formatonodoencontrado;
-                    formatonodoencontrado = formatonodo;
-                    formatonodoencontrado.relleno = Brushes.ForestGreen;
-                    mi_Arbol.BuscarenArbol(Dato,panel1.CreateGraphics(),panel1.Size,formatonodoencontrado);
-                    txtBuscar.Clear();
-                    txtBuscar.Focus();
-
-
-                    panel1.Refresh();
-                }
+                MessageBox.Show("Debe ingresar el valor a buscar");
+                return;
             }
+
+            int dato = int.Parse(txtBuscar.Text);
+            if (dato <= 0 || dato >= 1000)
+            {
+                MessageBox.Show("Solo recibe valores del 1 al 999", "Error de ingreso");
+                return;
+            }
+
+            FormatoNodo fEncontrado = formatonodo;
+            fEncontrado.relleno = Brushes.ForestGreen;
+            fEncontrado.rellenofuente = Brushes.White;
+
+            mi_Arbol.BuscarenArbol(dato, panel1.CreateGraphics(), panel1.Size, fEncontrado);
+            txtBuscar.Clear();
+            txtBuscar.Focus();
+            panel1.Refresh();
+        }
+
+        // ── Recorridos con RadioButton ────────────────────────────────────
+        private void btnRecorrer_Click(object sender, EventArgs e)
+        {
+            if (mi_Arbol.TotalNodos() == 0)
+            {
+                MessageBox.Show("El árbol está vacío");
+                return;
+            }
+
+            if (rbInOrden.Checked)
+                mi_Arbol.Recorrer(panel1.CreateGraphics(), formatonodo, TipRecorridoArbol.in0r, listRecorrido);
+            else if (rbPreOrden.Checked)
+                mi_Arbol.Recorrer(panel1.CreateGraphics(), formatonodo, TipRecorridoArbol.pre0r, listRecorrido);
+            else if (rbPostOrden.Checked)
+                mi_Arbol.Recorrer(panel1.CreateGraphics(), formatonodo, TipRecorridoArbol.post0r, listRecorrido);
+            else
+                MessageBox.Show("Selecciona un tipo de recorrido primero");
+
+            panel1.Refresh();
         }
     }
 }
