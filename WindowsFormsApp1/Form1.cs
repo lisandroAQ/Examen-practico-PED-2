@@ -81,7 +81,7 @@ namespace WindowsFormsApp1
                 return;
             }
 
-            int dato = int.Parse(txtEliminar.Text); // Bug corregido: ahora lee txtEliminar
+            int dato = int.Parse(txtEliminar.Text); 
             if (dato <= 0 || dato >= 1000)
             {
                 MessageBox.Show("Solo recibe valores del 1 al 999", "Error de ingreso");
